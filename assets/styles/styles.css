@@ -37,6 +37,7 @@ input[type="submit"] {
     border: 0;
     border-radius: 10px;
     height: 30px;
+    cursor: pointer;
 }
 
 textarea::placeholder, input::placeholder, select, input[type="submit"] {
