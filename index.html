@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pesquisa - Formulário</title>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="title">Levantamento de Informações</h1>
+            <p class="subtitle">Obrigado por nos ajudar a melhorar a plataforma!</p>
+        </div>
+
+        <form action="...">
+            <div class="form-frame">
+                <div class="form-input">
+                    <p>Nome</p>
+                    <label id="first-name-label" for="name"><input id="name" type="text" name="first-name-text" placeholder="Insira seu nome" required/> </label>
+                </div>
+
+                <div class="form-input">
+                    <p>Sobrenome</p>
+                    <label id="last-name-label" for="last-name"><input id="last-name" type="text" name="last-name-text" placeholder="Insira seu sobrenome" required/> </label>
+                </div>
+
+                <div class="form-input">
+                    <p>E-mail</p>
+                    <label id="email-label" for="email"> <input id="email" type="email" name="email-text" placeholder="Insira seu E-mail" required /> </label>
+                </div>
+
+                <div class="form-input">
+                    <p>Idade</p>
+                    <label id="age-label" for="age"> <input id="age" type="number" name="age-number" min="13" max="120" placeholder="Insira sua idade (opcional)"> </label>
+                </div>
+
+                <div class="form-input">
+                    <p>Ocupação</p>
+                    <label id="occupation-label" for="occupation">
+                        <select id="occupation" name="occupation-dropdown" >
+                            <option value="">Selecione seu papel atual</option>
+                            <option value="1">Estudante</option>
+                            <option value="2">Professor</option>
+                            <option value="3">Engenheiro</option>
+                            <option value="4">Enfermeiro</option>
+                            <option value="5">Advogado</option>
+                            <option value="6">Médico</option>
+                            <option value="7">Arquiteto</option>
+                            <option value="8">Outro</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="form-input">
+                    <fieldset>
+                        <legend>Grupo Étnico-Racial</legend>
+                        <label id="afro-label" for="afro"> <input id="afro" type="radio" name="ethnic-group"  /> Afrodescendente</label>
+                        <label id="asian-label" for="asian"> <input id="asian" type="radio" name="ethnic-group"  /> Asiático</label>
+                        <label id="white-label" for="white"> <input id="white" type="radio" name="ethnic-group"  /> Branco</label>
+                        <label id="another-ethnic-label" for="another-ethnic-group"> <input id="another-ethnic-group" type="radio" name="ethnic-group" checked  /> Outro</label>
+                    </fieldset>
+                </div>
+
+                <div class="form-input">
+                    <fieldset>
+                        <legend>Gênero</legend>
+                        <label id="male-label" for="male"> <input id="male" type="radio" name="gender"  /> Masculino</label>
+                        <label id="female-label" for="female"> <input id="female" type="radio" name="gender"  /> Feminino</label>
+                        <label id="another-gender-label" for="another-gender"> <input id="another-gender" type="radio" name="gender"  /> Outro</label>
+                        <label id="none-gender-label" for="none"> <input id="none" type="radio" name="gender" checked  /> Prefiro não informar</label>
+                    </fieldset>
+                </div>
+
+                <div class="form-input">
+                    <fieldset>
+                        <legend>Como ouviu falar de nós?</legend>
+                        <label id="newspaper-label" for="newspaper"> <input id="newspaper" type="checkbox" name="reference" /> Jornais</label>
+                        <label id="sponsor-label" for="sponsor"> <input id="sponsor" type="checkbox" name="reference" /> Anúncios</label>
+                        <label id="outdoor-label" for="outdoor"> <input id="outdoor" type="checkbox" name="reference" /> Outdoores</label>
+                        <label id="another-reference-label" for="another-reference"> <input id="another-reference" type="checkbox" name="reference" /> Outro(s)</label>
+                    </fieldset>
+                </div>
+
+                <div class="form-input">
+                    <p>Deixe sua sugestão ou crítica:</p>
+                    <label id="suggestions-label" for="suggestions">
+                        <textarea id="suggestions" name="suggestions-textarea" placeholder="Insira seu comentário aqui..." rows="8"></textarea>
+                    </label>
+                </div>
+
+                <div class="form-input">
+                    <input id="submit-button" type="submit" value="Enviar">
+                </div>
+                <hr>
+                <footer>
+                    <p>Desenvolvido por Anderson Luis</p>
+                    <p>(projeto inspirado de <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp.org)</a></p>
+                    <p>
+                        <a href="www.linkedin.com/in/anderson-luis-663970325" target="_blank"><img class="social-medias-images" src="./images/linkedin.jpg" alt="the linkedin logo"></a>
+                        <a href="https://github.com/andluis35" target="_blank"><img class="social-medias-images" src="./images/github.jpg" alt="the github logo"></a>
+                    </p>
+                </footer>
+            </div>
+        </form>
+    </body>
+</html>
